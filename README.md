@@ -1,17 +1,20 @@
 # Final-Project-Statistical-Modelling-with-Python
 
 ## Project/Goals
-(fill in your description and goals here)
+The goal of this project was to extract information from multiple API sources, including bike station data from city bikes for a chosen city, and data on businesses within a 1000m radius of those bike stations from both the Foursquare and Yelp APIs, and use these datasets to construct dataframes, a final joined dataframe of all 3 data sets with relevant details, and to perform EDA on this data which included data cleaning and visualization, as well as to build a regression model with the data to gain some insight on the relationship between the number of bikes at a certain station and the details of the businesses within a 1000m radius of that location. A SQLite database was also created in the data folder with all the resulting dataframes as data tables in the database.
 
 ## Process
-### (your step 1)
-### (your step 2)
+### 1) Created a connection to each API (using a permanent environment varialbe as the API key when needed), extracted the data as an json, and parsed through each set of data to create a dataframe dictionary with all the relevant business details data, these dictionaries were then converted into dataframes and saved as csv files.
+### 2) Joined the resulting 3 dataframes together to get all the relevant data that will be used in the statistical model into one data table, performed EDA on the resulting dataframe which included data cleaning and visualization for initial insights.
+### 3) Created a SQLite database which data tables corresponding to each dataframe, and inserted the dataframe values into the data tables within the database. Pre and post joined data was then checked and validated.
+### 4) Built a multivariate regression model with the resulting data, performed a backward stepwise selection on the independent variables, and got a final model result.
 
 ## Results
 (fill in what you found about the comparative quality of API coverage in your chosen area and the results of your model.)
+The Yelp API provided us with much more complete data, because it provided us with more details about each business (especially very relevant ones like rating, review_count, and price). The Yelp API also provided us with much more businesses than the FourSquare API, which could be due to the fact that the Yelp API automatically increased/decreased our specified search radius based on density of area, or just that more business data is avaiable on Yelp. The Yelp API also returned an exact distance, where as the FourSquare API returned a rounded distance. For the multivariate regression model results, even though all the high P values were removed and the P values for latitude and longitude are 0.000, the adjusted R-squared value is 0.174 which is very low, and it also decreased slightly each time a high P value was removed from the model. The coef values for latitude and longitude are also useless in this model because a positive or negative change in the value only represents a change in location, not a change to how small or large the value is, so even though the values are negative, it does not mean there is a negative correlation between these variables. Because of this, it can be concluded that although the relationship between total_bikes and location is significant, the model is not a good fit for the data, which could mean that the values in the dataset just naturally do not have a good linear relationship with eachother, or that there was not enough data in the dataset to produce a good linear relationship.
 
 ## Challenges 
-(discuss challenges you faced in the project)
+The biggest challenge faced in this project was the parsing of the json response from the APIs since even though most of the data was complete, there were still some missing values in the returned json structure so those missing values had to be detected and replaced 'n/a' inorder to have to same amount of values for each dataframe dictionary key so that a dataframe can be built from the data.
 
 ## Future Goals
-(what would you do if you had more time?)
+If i had more time, i would try to use a much larger city with a much higher density inorder to get a lot more businesss data so that the statisical model will produce more accurate results as to if the data is a good fit for the model or not.

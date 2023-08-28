@@ -1,0 +1,21 @@
+,name,main_category,address,rating,review_count,status,distance_away
+0,PP Thai Food Cart,Thai,"['1825 N Williams Ave', 'Portland, OR 97227']",5.0,28,Open,196.82985859569885
+1,Ox,Argentine,"['2225 NE Martin Luther King Jr Blvd', 'Portland, OR 97212']",4.5,1240,Open,736.7738544566815
+2,Pine State Biscuits,Breakfast & Brunch,"['125 NE Schuyler St', 'Portland, OR 97212']",4.0,737,Open,381.70582475312943
+3,Shawarma Express,Mediterranean,"['1825 N Williams Ave.', 'Portland, OR 97227']",4.5,63,Open,196.82985859569885
+4,Ko Sisters Seoul Food,Korean,"['1825 N Williams Ave', 'Portland, OR 97227']",4.0,96,Open,196.82985859569885
+5,Yama Sushi & Sake Bar,Sushi Bars,"['926 NW 10th Ave', 'Portland, OR 97209']",4.0,953,Open,1117.8626703819464
+6,The Pocket Pub,Cocktail Bars,"['2719 NE 7th Ave', 'Portland, OR 97212']",4.5,180,Open,1139.873648740521
+7,Arden ,American (New),"['417 NW 10th Ave', 'Portland, OR 97209']",4.5,191,Open,1390.7002232935158
+8,Gluten Free Gem,Bakeries,"['140 NE Broadway St', 'Portland, OR 97232']",4.5,174,Open,370.65114898779353
+9,Allora,Italian,"['504 NW 9th Ave', 'Portland, OR 97209']",4.0,337,Open,1252.3921455299012
+10,Tamale Boy,Mexican,"['668 N Russell St', 'Portland, OR 97227']",4.5,163,Open,775.1807870885651
+11,Black Water,Vegan,"['835 NE Broadway', 'Portland, OR 97232']",4.5,288,Open,926.8025126114468
+12,Cliff’s PDX,Dive Bars,"['128 NE Russell St', 'Portland, OR 97212']",5.0,39,Open,778.366699210344
+13,Smokin Fire Fish,Asian Fusion,"['2402 N Mississipi Ave', 'Portland, OR 97227']",4.5,255,Open,800.4377477552147
+14,Wheat Bay,Chinese,"['1618 NE 6th Ave', 'Portland, OR 97232']",4.5,43,Open,728.1576306879374
+15,Ovation Coffee & Tea,Breakfast & Brunch,"['941 NW Overton St', 'Portland, OR 97209']",4.5,853,Open,1023.0496325725227
+16,Lottie and Zulas,Breakfast & Brunch,"['120 NE Russel St', 'Portland, OR 97212']",4.5,64,Open,766.4512001733896
+17,Metropolitan Tavern,American (New),"['1021 NE Grand Ave', 'Ste 600', 'Portland, OR 97232']",3.5,120,Open,759.5122241329921
+18,Izakaya Kichinto,Ramen,"['102 NE Russell St', 'Portland, OR 97212']",4.0,327,Open,757.2289107150891
+19,Nuvrei,Bakeries,"['404 NW 10th Ave', 'Portland, OR 97209']",4.0,635,Open,1373.3029379088355
